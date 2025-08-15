@@ -1,2 +1,2 @@
 # smart-student-management
-Smart Student Management System
+Student Management System
