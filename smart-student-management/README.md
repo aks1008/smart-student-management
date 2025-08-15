@@ -1,5 +1,51 @@
 # SmartStudentManagement
 
+## Purpose & Introduction
+
+SmartStudentManagement is a modern web application designed to help teachers efficiently manage student information and gain actionable insights into student performance. The application provides:
+
+- **Student Management:** Teachers can view and manage a comprehensive list of students, easily identify which students are lagging in specific subjects, and access detailed insights to support student progress.
+- **AI-Powered Chatbot:** The integrated chatbot leverages Model Context Protocol (MCP) with Agents in Langchain to connect to both the database and OpenAI. This allows teachers to ask questions in natural language and receive insights about student performance, trends, and other relevant information instantly.
+
+The combination of a user-friendly interface and advanced AI-driven analytics empowers educators to make data-informed decisions and provide targeted support to their students.
+
+## Project Structure
+
+```
+smart-student-management/
+├── angular.json
+├── package.json
+├── README.md
+├── tsconfig*.json
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── index.html
+│   ├── main.ts
+│   ├── main.server.ts
+│   ├── server.ts
+│   ├── styles.scss
+│   └── app/
+│       ├── app.config*.ts
+│       ├── app.html
+│       ├── app.routes*.ts
+│       ├── app.scss
+│       ├── app.spec.ts
+│       ├── app.ts
+│       ├── components/
+│       │   ├── chat-bot/
+│       │   ├── header/
+│       │   └── student-grid/
+│       └── services/
+│           ├── chatbot.ts
+│           └── student.ts
+└── src/assets/
+    ├── logo.svg/png/webp
+    └── mock-students.json
+```
+
+---
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
 
 ## Development server
