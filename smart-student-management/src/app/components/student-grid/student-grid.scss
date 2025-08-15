@@ -1,0 +1,16 @@
+/* Force DevExtreme grid header color using ::ng-deep for view encapsulation */
+::ng-deep .dx-datagrid .dx-header-row {
+	background: #0f2027 !important;
+}
+::ng-deep .dx-datagrid .dx-header-row .dx-datagrid-text-content {
+	color: #fff !important;
+	font-weight: 600;
+}
+
+.student-grid-container {
+	padding: 24px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}

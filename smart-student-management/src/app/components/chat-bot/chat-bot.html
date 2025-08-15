@@ -1,0 +1,47 @@
+<div class="chat-container">
+    <div class="messages" #messageContainer>
+        <div *ngFor="let message of messages" 
+             [ngClass]="{'user-message': message.type === 'user', 'bot-message': message.type === 'bot'}"
+             class="message">
+            <div class="message-content">
+                {{ message.text }}
+            </div>
+            <div class="message-images" *ngIf="message.images && message.images.length > 0">
+                <img *ngFor="let image of message.images" [src]="image" class="message-image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="input-container">
+        <div class="image-preview" *ngIf="selectedImages.length > 0">
+            <div *ngFor="let image of selectedImages; let i = index" class="preview-item">
+                <img [src]="image" class="preview-image">
+                <button class="remove-image" (click)="removeImage(i)">×</button>
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" 
+                   [(ngModel)]="userInput" 
+                   placeholder="Type your message here..."
+                   (keyup.enter)="sendMessage()">
+            
+            <label class="upload-button">
+                <input type="file" 
+                       accept="image/*" 
+                       multiple 
+                       (change)="onFileSelected($event)"
+                       style="display: none;">
+                <span class="upload-icon">📎</span>
+            </label>
+            
+                        <button class="send-icon-btn" (click)="sendMessage()" 
+                                        [disabled]="!userInput && selectedImages.length === 0"
+                                        aria-label="Send">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 20L21 12L3 4V10L17 12L3 14V20Z" fill="currentColor"/>
+                                </svg>
+                        </button>
+        </div>
+    </div>
+</div>

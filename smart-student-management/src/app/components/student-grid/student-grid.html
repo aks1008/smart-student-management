@@ -1,0 +1,31 @@
+<div class="student-grid-container">
+    <dx-data-grid
+        [dataSource]="studentsDataSource"
+        [showBorders]="true"
+        [rowAlternationEnabled]="true"
+        [allowColumnReordering]="true"
+        [allowColumnResizing]="true">
+        
+        <dxo-paging [pageSize]="10"></dxo-paging>
+        <dxo-pager
+            [showPageSizeSelector]="true"
+            [allowedPageSizes]="[5, 10, 20]"
+            [showNavigationButtons]="true">
+        </dxo-pager>
+        
+        <dxo-search-panel
+            [visible]="true"
+            [highlightCaseSensitive]="false">
+        </dxo-search-panel>
+        
+        <dxo-filter-row [visible]="true"></dxo-filter-row>
+        <dxo-header-filter [visible]="true"></dxo-header-filter>
+        
+        <dxi-column dataField="studentId" caption="Student ID" dataType="string"></dxi-column>
+        <dxi-column dataField="name" caption="Name" dataType="string"></dxi-column>
+        <dxi-column dataField="dateOfBirth" caption="Date of Birth" dataType="date"></dxi-column>
+        <dxi-column dataField="class" caption="Class" dataType="string"></dxi-column>
+        <dxi-column dataField="totalMarks" caption="Total Marks" dataType="number"></dxi-column>
+        <dxi-column dataField="emergencyContact" caption="Emergency Contact" dataType="string"></dxi-column>
+    </dx-data-grid>
+</div>

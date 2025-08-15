@@ -1,0 +1,22 @@
+[
+  {"studentId":"S0001","name":"Aarav Patel","dateOfBirth":"2008-03-12","class":"8A","totalMarks":782,"emergencyContact":"+1-555-0101"},
+  {"studentId":"S0002","name":"Maya Singh","dateOfBirth":"2007-11-02","class":"9B","totalMarks":812,"emergencyContact":"+1-555-0102"},
+  {"studentId":"S0003","name":"Liam Johnson","dateOfBirth":"2006-06-22","class":"10C","totalMarks":765,"emergencyContact":"+1-555-0103"},
+  {"studentId":"S0004","name":"Sofia Garcia","dateOfBirth":"2009-01-15","class":"7A","totalMarks":698,"emergencyContact":"+1-555-0104"},
+  {"studentId":"S0005","name":"Noah Brown","dateOfBirth":"2005-09-05","class":"11B","totalMarks":845,"emergencyContact":"+1-555-0105"},
+  {"studentId":"S0006","name":"Emma Davis","dateOfBirth":"2010-12-19","class":"6C","totalMarks":712,"emergencyContact":"+1-555-0106"},
+  {"studentId":"S0007","name":"Oliver Wilson","dateOfBirth":"2008-07-30","class":"8B","totalMarks":730,"emergencyContact":"+1-555-0107"},
+  {"studentId":"S0008","name":"Ava Martinez","dateOfBirth":"2007-04-09","class":"9A","totalMarks":790,"emergencyContact":"+1-555-0108"},
+  {"studentId":"S0009","name":"Elijah Anderson","dateOfBirth":"2006-02-27","class":"10A","totalMarks":801,"emergencyContact":"+1-555-0109"},
+  {"studentId":"S0010","name":"Isabella Thomas","dateOfBirth":"2009-10-11","class":"7B","totalMarks":677,"emergencyContact":"+1-555-0110"},
+  {"studentId":"S0011","name":"Lucas Taylor","dateOfBirth":"2005-05-03","class":"11A","totalMarks":858,"emergencyContact":"+1-555-0111"},
+  {"studentId":"S0012","name":"Mia Moore","dateOfBirth":"2010-08-21","class":"6A","totalMarks":705,"emergencyContact":"+1-555-0112"},
+  {"studentId":"S0013","name":"Mason Jackson","dateOfBirth":"2008-11-29","class":"8C","totalMarks":744,"emergencyContact":"+1-555-0113"},
+  {"studentId":"S0014","name":"Charlotte White","dateOfBirth":"2007-03-18","class":"9C","totalMarks":826,"emergencyContact":"+1-555-0114"},
+  {"studentId":"S0015","name":"James Harris","dateOfBirth":"2006-12-02","class":"10B","totalMarks":778,"emergencyContact":"+1-555-0115"},
+  {"studentId":"S0016","name":"Amelia Martin","dateOfBirth":"2009-06-14","class":"7C","totalMarks":693,"emergencyContact":"+1-555-0116"},
+  {"studentId":"S0017","name":"Benjamin Thompson","dateOfBirth":"2005-02-08","class":"11C","totalMarks":838,"emergencyContact":"+1-555-0117"},
+  {"studentId":"S0018","name":"Harper Garcia","dateOfBirth":"2010-09-26","class":"6B","totalMarks":721,"emergencyContact":"+1-555-0118"},
+  {"studentId":"S0019","name":"Ethan Martinez","dateOfBirth":"2008-05-07","class":"8D","totalMarks":709,"emergencyContact":"+1-555-0119"},
+  {"studentId":"S0020","name":"Evelyn Robinson","dateOfBirth":"2007-01-30","class":"9D","totalMarks":799,"emergencyContact":"+1-555-0120"}
+]

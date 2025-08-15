@@ -1,0 +1,94 @@
+ .app-container {
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     background: linear-gradient(135deg, #ececec 0%, #d3d3d8 100%);
+    /* Fix for chatbox rounded corner white gap */
+    padding: 8px;
+
+        .resizable-main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 0;
+            overflow: hidden;
+            min-width: 0;
+            position: relative;
+
+                .resizable-student-grid {
+                    min-width: 200px;
+                    max-width: 80vw;
+                    width: 60%;
+                    height: 100%;
+                    transition: width 0.1s;
+                    overflow: hidden;
+                    background: white;
+                    border-radius: 8px 0 0 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .resizer {
+                    width: 16px;
+                    min-width: 16px;
+                    cursor: ew-resize;
+                    background: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 2;
+                    position: relative;
+                    transition: background 0.2s;
+                    border-radius: 4px;
+                    user-select: none;
+                }
+                .resizer-handle {
+                    width: 8px;
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+                }
+                .resizer-handle span {
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    background: #00b4d8;
+                    border-radius: 2px;
+                    opacity: 0.7;
+                }
+                .resizer:hover .resizer-handle span {
+                    background: #005bea;
+                    opacity: 1;
+                }
+
+            .resizable-chat-bot {
+                min-width: 200px;
+                max-width: 80vw;
+                width: 40%;
+                overflow: auto;
+                background: white;
+                border-radius: 0 8px 8px 0;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                z-index: 1;
+            }
+        }
+}
+
+/* modern theme variables and subtle card updates */
+:root {
+    --accent: #4A90E2;
+    --accent-2: #7B61FF;
+    --bg-surface: #ffffff;
+    --muted: #6f859f;
+}
+
+app-student-grid, app-chat-bot {
+    background: var(--bg-surface);
+    color: #15232b;
+}
