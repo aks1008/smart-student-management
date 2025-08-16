@@ -66,13 +66,13 @@ export class ChatBot implements AfterViewChecked {
         this.selectedImages = [];
         
         try {
-            const response = await this.chatbotService.sendMessage(this.userInput, this.selectedImages)
+            const response = await this.chatbotService.sendMessage(userMessage.text, this.selectedImages)
                 .toPromise();
                 
-            if (response && typeof response === 'object' && 'answer' in response) {
+            if (response && typeof response === 'object' && 'output' in response) {
                 this.messages.push({
                     type: 'bot',
-                    text: response['answer'] as string
+                    text: response['output'] as string
                 });
             }
         } catch (error) {
