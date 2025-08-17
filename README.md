@@ -11,6 +11,18 @@ SmartStudentManagement is a modern web application designed to help teachers eff
 
 The combination of a user-friendly interface and advanced AI-driven analytics empowers educators to make data-informed decisions and provide targeted support to their students.
 
+## Back End API code GitHub Repo
+   ```bash
+   git clone https://github.com/aks1008/SmartTaskerAI.git
+   ```
+
+## Technology Stack
+- **Frontend**: Angular 15+
+- **Backend**: Flask (Python)
+- **Database**: SQLite
+- **AI Integration**: Google Gemini AI
+- **API Documentation**: Swagger/OpenAPI
+- 
 ## Project Structure
 
 ```
